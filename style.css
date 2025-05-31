@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=pacifico&diaplay=swap');
+*{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(137, 182, 85, 0.76);
+    background-image: url("space3.png");
+    background-repeat: no repeat;
+    background-size: cover;
+    backdrop-filter: blur(1px);
+    animation:bgblur 3s;
+}
+.navbar{
+    background-color: rgba(134, 8, 8, 0.979);
+    display:flex;
+    margin:50px  50px 50px 50px;
+    position: sticky;
+    top:5;
+    animation:color 10s;
+
+
+}
+.listitem{
+    background-color: rgb(245, 231, 231);
+}
+.navbar ul{
+    background-color: rgb(141, 184, 137);
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    list-style-type: none;
+    
+}
+h2{
+    color: rgb(129, 9, 9);
+}
+.navbar li{
+    cursor: pointer;
+    color: rgb(87, 15, 15);
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace
+}
+
+.navbar li:hover{
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    color: rgb(1, 1, 32);
+
+}
+img:hover{
+    transform:scale(90%);
+    transition:2s ease;
+}
+
+form{
+    background-color: rgb(54, 157, 175);
+    border: solid 2px rgb(0, 0, 0);
+    width:500px;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+button{
+    margin-top: 10px;
+    width:100px;
+    height:35px;
+    font-size:25px;
+    background-color: rgb(78, 8, 67);
+    border-radius: 20px;
+    border: solid #050302;
+    color: rgb(211, 12, 12);
+    
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+details{
+    font-size: 30px;
+    background-color: aquamarine;
+    cursor: pointer;
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.contact{
+    height: 100vh;
+}
+@keyframes color{
+    0%{
+        background-color:antiquewhite;
+        transform: translateY(100px);
+    }
+    100%{
+        background-color: blue;
+        transform: translateY(0px);
+
+    }
+}
+@keyframes bgblur{
+    0%{
+        backdrop-filter: blur(100px);
+    }
+    100%{
+        backdrop-filter:blur(10px) ;
+    }
+}

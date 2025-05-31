@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>calculator app</title>
+    </head>
+    <body>
+        <div>
+            <form>
+                <label>enter the first number:</label>
+                <input id="first"></br>
+            </br>
+            <label>enter the second number</label>
+            <input id="second">
+            </form></br>
+        </br>
+        <select id="operator">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+        <button onclick="calculator()">submit</button>></button>
+        <h3>result:</h3>
+        <h2 id="resulttext"></h2>
+    </form>
+    <a href="../archana.html">go back</a>
+        </div>
+        <script>
+            
+            function calculator(){
+                let no1=parseInt(document.getElementById("first").value);
+                let no2=parseInt(document.getElementById("second").value);
+                let op=document.getElementById("operator").value;
+                var result=0;
+                if(op == "+"){
+                    result=no1+no2;
+                }
+                else if(op == "-"){
+                    result=no1-no2;
+                }
+                else if(op =="*"){
+                    result=no1*no2;
+                }
+                else if(op == "/"){
+                    result=no1/no2;
+                }
+                document.getElementById("resulttext").innerText=result;
+
+            }
+        </script>
+    </body>
+</html>
